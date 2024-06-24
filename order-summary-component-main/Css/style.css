@@ -1,0 +1,153 @@
+/* Reset Padrao dos valores do naveg     */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Red Hat Display", sans-serif;
+  
+} 
+
+/* Programando para o container principal ficar no centro */
+body{
+    background-image: url(../order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    /* background: hsl(225, 100%, 98%) ; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* organizando tudo dentro da main para ficar alinhado */
+main{
+    background: #fff;
+    max-width: 415px;
+    border-radius: 1rem;
+}
+
+/* estilizando os elementos da section */
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main section h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color:  hsl(223, 47%, 23%);
+}
+
+main section span {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+/* largura cem porcento do tamanho colocado acima
+no max width */
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* estilizando o icone juntamento com o link eo valor */
+main .informations{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* preencher 100% da box */
+    width: 100%;
+
+
+    background: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem;
+
+   margin: 2rem 0;
+}
+
+/* estilizando a div inteira que tem o icone e o texto com preço */
+main .informations .music__price {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* estilizar o icone */
+main .informations img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+/* estilizando o texto do preco anual */
+main .informations .price {
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilizando o link */
+main .informations a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    font-size: 90%;
+
+    /* adicionando tempo de transicao da animation para o hover */
+    transform: all 0.4;
+}
+
+/* modificando quando mouse passar por cima do link */
+main .informations a:hover {
+    color: hsl(223, 47%, 23%);
+  text-decoration: none;
+}
+
+/* modificando o btn */
+main button {
+    /* modificando para ficar a maozinha qnd passar mouse encima */
+    cursor: pointer;
+
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 600;
+
+    border: none;
+    width: 100%;
+
+    /* primeiro num é vertical
+    segundo num é horizontal */
+    padding: 1rem 0;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    
+    /* sombra */
+    /* primeiro valor :eixo X
+       segundo valor: eixo Y 
+       terceiro valor: blur */
+    box-shadow: 0px 20px 10px rgb(56, 42, 225, 0.2);   
+    transition: background 0.3;
+}
+
+main button:hover {
+    background: #766CF1;
+}
+
+#cancel__order{
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: color 0.3s;
+}
+
+#cancel__order:hover {
+    color:hsl(223, 47%, 23%)
+}
